@@ -3,7 +3,8 @@ resource "local_file" "fileHandler" {
   content = "helllllllo"
 }
 
-resource "local_file" "fileHandler2" {
-  filename = "./text_file.txt"
-  content = "helllllllo again"
+resource "random_pet" "pet_name" {
+  length = 2
+  prefix = "jigar"
+  separator = "-"
 }
